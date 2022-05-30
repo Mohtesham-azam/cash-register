@@ -1,0 +1,42 @@
+body{
+font-family: sans-serif;
+padding: 20px;
+}
+h1 {
+font-size: 40px;
+margin-top: 0;
+margin-bottom: 15px;
+}
+h1, p {
+text-align: center;
+}
+.container {
+width: 100%;
+background-color: #757575;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+max-width: 500px;
+}
+hr {
+height: 2px;
+background-color: #BDBDBD;
+border-color: #BDBDBD;
+}
+.item p {
+display: inline-block;
+margin-top: 5px;
+margin-bottom: 5px;
+font-size: 18px;
+}
+.chng, .total {
+text-align: left;
+width: 65%;
+}
+.amnt {
+width: 35%;
+}
+input [type=button]{
+text-align: right;
+width: 25%;
+}

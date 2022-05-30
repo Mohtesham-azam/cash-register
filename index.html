@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>CASH REGISTER</title>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>CASH REGISTER</h1>
+</header>
+<hr>
+<main>
+<article class="item">
+<p class="chng">Price:</p><p class="amnt"><input type="number" min="0" step="0.01" name="price" class="form-control"></p>
+</article>
+<article class="item">
+<p class="chng">Cash:</p><p class="amnt"><input type="number" min="0" step="0.01" name="cash" class="form-control"></p>
+</article>
+<article class="item">
+<p class="chng">Penny:</p><p class="amnt"><input type="number" min="0" step="0.01" name="penny" class="form-control" placeholder="multiples of 0.01"></p>
+</article>
+<article class="item">
+<p class="chng">Nickle:</p><p class="amnt"><input type="number" min="0" step="0.05" name="nickle" class="form-control" placeholder="multiples of 0.05"></p>
+</article>
+<article class="item">
+<p class="chng">Dime:</p><p class="amnt"><input type="number" min="0" step="0.1" name="dime" class="form-control" placeholder="multiples of 0.1"></p>
+</article>
+<article class="item">
+<p class="chng">Quarter:</p><p class="amnt"><input type="number" min="0" step="0.25" name="quarter" class="form-control" placeholder="multiples of 0.25"></p>
+</article>
+<article class="item">
+<p class="chng">One:</p><p class="amnt"><input type="number" min="0" step="1" name="one" class="form-control" placeholder="multiples of 1"></p>
+</article>
+<article class="item">
+<p class="chng">Five:</p><p class="amnt"><input type="number" min="0" step="5" name="five" class="form-control" placeholder="multiples of 5"></p>
+</article>
+<article class="item">
+<p class="chng">Ten:</p><p class="amnt"><input type="number" min="0" step="10" name="ten" class="form-control" placeholder="multiples of 10"></p>
+</article>
+<article class="item">
+<p class="chng">Twenty:</p><p class="amnt"><input type="number" min="0" step="20" name="twenty" class="form-control" placeholder="multiples of 20"></p>
+</article>
+<article class="item">
+<p class="chng">Hundred:</p><p class="amnt"><input type="number" min="0" step="100" name="hundred" class="form-control" placeholder="multiples of 100"></p>
+</article>
+<hr>
+<article class="item">
+<p class="total">Total:</p><p class="amnt"><input name="total" class="form-control" disabled></p>
+</article>
+<p><input type="button" value="Result" class="form-control bg-primary w-25 mx-auto" onclick="calcSum()"></p>
+<h3 id="message"></h3>
+<ul id="list"></ul>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
